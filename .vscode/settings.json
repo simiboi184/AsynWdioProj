@@ -1,0 +1,6 @@
+{
+    //Part 13 Gherkin Intellisense -- https://www.youtube.com/watch?v=6FECa3952Wg
+    "cucumberautocomplete.steps": ["test/steps/*.ts"],
+    "cucumberautocomplete.strictGherkinCompletion" : true
+    
+}

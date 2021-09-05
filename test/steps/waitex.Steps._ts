@@ -1,0 +1,32 @@
+import { Given, When, Then} from "@cucumber/cucumber";
+import { clickOnBtn } from "src/utils/commands";
+
+//https://www.youtube.com/watch?v=gAuCLUO08PI&t=35s
+
+Given(/^I am on dynamic loading (.+) page$/, async (page:string) => {
+    await browser.maximizeWindow();
+    await browser.url(page);
+});
+
+When(/^I click on start button$/, async () => {
+    const startbtn = $('#start button');
+    await clickOnBtn(startbtn);        
+});
+
+Then(/^I validate loading icon$/, async () => {
+    const loadingbar = $('#loading');
+    const finishHeader = $('#finish h4');
+
+    await (await loadingbar).waitForDisplayed({timeout: 7500});
+    await (await loadingbar).waitForDisplayed({reverse: true, timeout: 7500, timeoutMsg:"We can input some error message ......"}); //doing an reverse, we are expecting for disappear after 7.5 secs, similar timeoutMsg can be apply for other functions..
+
+    //await (await finishHeader).waitForDisplayed({timeout:10000});
+
+    // await (await finishHeader).getText() ==='Hello World' ===> boolean condition! in the first argument!
+    await browser.waitUntil( async () => await (await finishHeader).getText() ==='Hello World', {
+        timeout: 10000,
+        timeoutMsg: "wait until >>> this element is not displayed !!! Need longer time !"
+    }); 
+    await expect(finishHeader).toBeDisplayed(); //how long will it wait 10000 seconds
+});
+

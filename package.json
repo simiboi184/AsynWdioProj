@@ -1,0 +1,32 @@
+{
+  "name": "AsynProjects",
+  "version": "1.0.0",
+  "description": "Learning Async Mode for Webdriver IO",
+  "main": "index.js",
+  "dependencies": {
+    "@wdio/cli": "^7.10.0"
+  },
+  "scripts": {
+    "test": "npx wdio wdio.conf.ts",
+    "steps": "npx cucumber-js.cmd"
+  },
+  "keywords": [
+    "webdriver.io",
+    "typescript",
+    "cucumber",
+    "node.js"
+  ],
+  "devDependencies": {
+    "@types/supertest": "^2.0.11",
+    "@wdio/cucumber-framework": "^7.10.0",
+    "@wdio/local-runner": "^7.10.0",
+    "@wdio/spec-reporter": "^7.10.0",
+    "chromedriver": "^92.0.1",
+    "supertest": "^6.1.6",
+    "ts-node": "^10.2.1",
+    "tsconfig-paths": "^3.11.0",
+    "typescript": "^4.3.5",
+    "wdio-chromedriver-service": "^7.2.0",
+    "webdriverio":"^7.10.0"
+  }
+}

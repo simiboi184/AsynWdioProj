@@ -8,7 +8,10 @@
   },
   "scripts": {
     "test": "npx wdio wdio.conf.ts",
-    "steps": "npx cucumber-js.cmd"
+    "steps": "npx cucumber-js.cmd",
+    "smoke_test": "npx wdio wdio.conf.ts --suite smoke",
+    "regression_test": "npx wdio wdio.conf.ts --suite regression",
+    "mainworkflow_test": "npx wdio wdio.conf.ts --suite mainworkflow"
   },
   "keywords": [
     "webdriver.io",

@@ -1,7 +1,8 @@
 import { Given, When, Then } from "@cucumber/cucumber"
 import formPage from 'src/pages/form.page'
-import formdata from '../resources/formdata.json';
-import  fs from 'fs';
+import formdata from "test/resources/formdata.json";
+import { parseJsonFile } from "src/utils/fileutils";
+import { RESOURCE_FOLDER_PATH } from "src/constants/pathconsts";
 
 let timePause = 3000;
 
@@ -23,7 +24,9 @@ When(/^I enter all mandate fields$/, async () => {
 //More robust reading the data path and convert the string filesystem fs... 
 //JSONFile will not have the 'auto suggestion'
 When(/^I enter all mandate fields from (.+)$/, async (datapath:string) => {
-    let data = JSON.parse(fs.readFileSync(datapath, "utf-8"));
+    // After introducing the fileUtils file implementations
+    // let data = JSON.parse(fs.readFileSync(datapath, "utf-8"));
+    let data = parseJsonFile(RESOURCE_FOLDER_PATH+datapath);
     await formPage.setNames(data.firstname, data.lastname);
     await formPage.setEmail(data.email);
     await formPage.setMobile(data.mobileno);

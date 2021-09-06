@@ -3,6 +3,6 @@
         "target": "ES5",
         "esModuleInterop": true,
         "baseUrl": ".",
-        "types": ["node", "webdriverio/async", "@wdio/cucumber-framework", "expect-webdriverio"]
+        "types": ["node", "webdriverio/", "@wdio/cucumber-framework", "expect-webdriverio"]
     }
 }

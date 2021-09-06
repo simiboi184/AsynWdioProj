@@ -19,7 +19,7 @@ Then(/^I validate loading icon$/, async () => {
     await waitexPage.loadingbar.waitForDisplayed({reverse: true, timeout: 7500, timeoutMsg:"We can input some error message ......"}); //doing an reverse, we are expecting for disappear after 7.5 secs, similar timeoutMsg can be apply for other functions..
 
     //await (await finishHeader).waitForDisplayed({timeout:10000});
-    // await (await finishHeader).getText() ==='Hello World' ===> boolean condition! in the first argument!
+    //await (await finishHeader).getText() ==='Hello World' ===> boolean condition! in the first argument!
     await browser.waitUntil( async () => await waitexPage.finishHeader.getText() ==='Hello World!', {
         timeout: 10000,
         timeoutMsg: "wait until >>> this element is not displayed !!! Need longer time !"

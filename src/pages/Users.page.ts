@@ -40,7 +40,7 @@ class UsersPage extends Page {
     }
 
     async getStatusText(): Promise<string> {
-        await (await this.success_elem).waitForDisplayed(); //portion where it return 'http 200 success'
+        await this.success_elem.waitForDisplayed(); //portion where it return 'http 200 success'
         return (await this.status_text).getText();
     }
 

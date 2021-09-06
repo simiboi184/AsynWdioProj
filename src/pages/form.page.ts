@@ -26,7 +26,5 @@ class formPage extends Page{
     public async setSubject(subject:string){
         await setTextValue(this.subjectsInput, subject);
     }
-
-
 }
 export default new formPage();

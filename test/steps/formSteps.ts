@@ -26,7 +26,7 @@ When(/^I enter all mandate fields$/, async () => {
 When(/^I enter all mandate fields from (.+)$/, async (datapath:string) => {
     // After introducing the fileUtils file implementations
     // let data = JSON.parse(fs.readFileSync(datapath, "utf-8"));
-    let data = parseJsonFile(RESOURCE_FOLDER_PATH+datapath);
+    let data = parseJsonFile(RESOURCE_FOLDER_PATH + datapath);
     await formPage.setNames(data.firstname, data.lastname);
     await formPage.setEmail(data.email);
     await formPage.setMobile(data.mobileno);

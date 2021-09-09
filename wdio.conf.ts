@@ -1,3 +1,5 @@
+import path from 'path';
+
 const Google="https://www.google.com/";
 const Wiki="https://en.wikipedia.org/wiki/Main_Page";
 
@@ -52,9 +54,11 @@ export const config: WebdriverIO.Config = {
     ],
     suites: {
         smoke:[
+            // this is easy to place everything within the smoke folder and just run the codes/files within the directory
             './test/features/smoke/*.feature'
         ],
         regression:[
+            //rather than manually placing them one by one...            
             './test/features/**/E2E_user.feature',
             './test/features/**/form.feature',
             './test/features/**/home.feature',
@@ -89,20 +93,27 @@ export const config: WebdriverIO.Config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
-    capabilities: [{
+    capabilities: [
+        {
     
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
         maxInstances: 3,
-        //
         browserName: 'chrome',
-        acceptInsecureCerts: true
+        acceptInsecureCerts: true,
+        "goog:chromeOptions" : {
+            "prefs": {
+                //if the folder does not exists, it will create automatically
+                "download.default_directory": path.join(process.cwd(), 'downloads') 
+            }
+        }
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
-    }],
+        }
+]   ,
     //
     // ===================
     // Test Configurations

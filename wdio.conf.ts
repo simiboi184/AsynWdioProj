@@ -1,4 +1,5 @@
 import path from 'path';
+import { DOWNLOAD_FOLDER_PATH } from './src/constants/pathconsts';
 
 const Google="https://www.google.com/";
 const Wiki="https://en.wikipedia.org/wiki/Main_Page";
@@ -105,7 +106,7 @@ export const config: WebdriverIO.Config = {
         "goog:chromeOptions" : {
             "prefs": {
                 //if the folder does not exists, it will create automatically
-                "download.default_directory": path.join(process.cwd(), 'downloads') 
+                "download.default_directory": DOWNLOAD_FOLDER_PATH
             }
         }
         // If outputDir is provided WebdriverIO can capture driver session logs

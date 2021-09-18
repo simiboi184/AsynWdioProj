@@ -11,7 +11,8 @@
     "steps": "npx cucumber-js.cmd",
     "smoke_test": "npx wdio wdio.conf.ts --suite smoke",
     "regression_test": "npx wdio wdio.conf.ts --suite regression",
-    "mainworkflow_test": "npx wdio wdio.conf.ts --suite mainworkflow"
+    "mainworkflow_test": "npx wdio wdio.conf.ts --suite mainworkflow",
+    "allure_test_report": "npx allure generate allure-results --clean && allure open"
   },
   "keywords": [
     "webdriver.io",
@@ -21,15 +22,17 @@
   ],
   "devDependencies": {
     "@types/supertest": "^2.0.11",
+    "@wdio/allure-reporter": "^7.10.1",
     "@wdio/cucumber-framework": "^7.10.0",
     "@wdio/local-runner": "^7.10.0",
     "@wdio/spec-reporter": "^7.10.0",
+    "allure-commandline": "^2.13.8",
     "chromedriver": "^92.0.1",
     "supertest": "^6.1.6",
     "ts-node": "^10.2.1",
     "tsconfig-paths": "^3.11.0",
     "typescript": "^4.3.5",
     "wdio-chromedriver-service": "^7.2.0",
-    "webdriverio":"^7.10.0"
+    "webdriverio": "^7.10.0"
   }
 }

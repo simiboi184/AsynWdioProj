@@ -1,0 +1,137 @@
+{
+  "uid" : "a8bc361fb6ee72cb",
+  "name" : "Validate End to End POST Create User",
+  "fullName" : "Test End to End User.Validate End to End POST Create User",
+  "historyId" : "3e4d65dd79838ecd457fa7fddb1b7986",
+  "time" : {
+    "start" : 1631408178148,
+    "stop" : 1631408182274,
+    "duration" : 4126
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I am on page https://resttesttest.com/",
+      "time" : {
+        "start" : 1631408178148,
+        "stop" : 1631408181168,
+        "duration" : 3020
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When I perform create user search for api /api/users",
+      "time" : {
+        "start" : 1631408181168,
+        "stop" : 1631408181771,
+        "duration" : 603
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And I make POST /api/users api call",
+      "time" : {
+        "start" : 1631408181771,
+        "stop" : 1631408182224,
+        "duration" : 453
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Then I validate the create user search result",
+      "time" : {
+        "start" : 1631408182224,
+        "stop" : 1631408182274,
+        "duration" : 50
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test End to End User"
+  }, {
+    "name" : "testClass",
+    "value" : "Test End to End User"
+  }, {
+    "name" : "testMethod",
+    "value" : "Validate End to End POST Create User"
+  }, {
+    "name" : "package",
+    "value" : "Test End to End User"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-93.0.4577.63"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "fae6d0cccdee5216",
+      "status" : "broken",
+      "statusDetails" : "RequestError: connect ECONNREFUSED 127.0.0.1:9515",
+      "time" : {
+        "start" : 1631408057264,
+        "stop" : 1631408057269,
+        "duration" : 5
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a8bc361fb6ee72cb.json",
+  "parameterValues" : [ "chrome-93.0.4577.63" ]
+}

@@ -1,0 +1,117 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1631408053056' stop='1631408057271'>
+    <name>Test End to End User</name>
+    <title>Test End to End User</title>
+    <test-cases>
+        <test-case start='1631408053070' status='broken' stop='1631408057260'>
+            <name>Validate End to End Get Single User</name>
+            <title>Validate End to End Get Single User</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-93.0.4577.63'/>
+            </parameters>
+            <steps>
+                <step start='1631408053075' status='passed' stop='1631408057253'>
+                    <name>Given I am on page https://resttesttest.com/</name>
+                    <title>Given I am on page https://resttesttest.com/</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1631408057253' status='broken' stop='1631408057260'>
+                    <name>When I perform /api/users/2 user search</name>
+                    <title>When I perform /api/users/2 user search</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1631408057260' status='canceled' stop='1631408057261'>
+                    <name>And I make GET /api/users/2 api call</name>
+                    <title>And I make GET /api/users/2 api call</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1631408057261' status='canceled' stop='1631408057261'>
+                    <name>Then I validate the search result</name>
+                    <title>Then I validate the search result</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>RequestError: connect ECONNREFUSED 127.0.0.1:9515</message>
+                <stack-trace>RequestError: connect ECONNREFUSED 127.0.0.1:9515
+                    at ClientRequest.&lt;anonymous> (D:\KEN\SELFLEARN\AsynWdioProj\node_modules\got\dist\source\core\index.js:956:111)
+                    at Object.onceWrapper (events.js:482:26)
+                    at ClientRequest.emit (events.js:387:35)
+                    at ClientRequest.emit (domain.js:470:12)
+                    at ClientRequest.origin.emit (D:\KEN\SELFLEARN\AsynWdioProj\node_modules\@szmarczak\http-timer\dist\source\index.js:43:20)
+                    at Socket.socketErrorListener (_http_client.js:475:9)
+                    at Socket.emit (events.js:375:28)
+                    at Socket.emit (domain.js:470:12)
+                    at emitErrorNT (internal/streams/destroy.js:106:8)
+                    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+                    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+                    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1148:16)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1631408057264' status='broken' stop='1631408057269'>
+            <name>Validate End to End POST Create User</name>
+            <title>Validate End to End POST Create User</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-93.0.4577.63'/>
+            </parameters>
+            <steps>
+                <step start='1631408057264' status='broken' stop='1631408057269'>
+                    <name>Given I am on page https://resttesttest.com/</name>
+                    <title>Given I am on page https://resttesttest.com/</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1631408057269' status='canceled' stop='1631408057269'>
+                    <name>When I perform create user search for api /api/users</name>
+                    <title>When I perform create user search for api /api/users</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1631408057269' status='canceled' stop='1631408057269'>
+                    <name>And I make POST /api/users api call</name>
+                    <title>And I make POST /api/users api call</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1631408057269' status='canceled' stop='1631408057269'>
+                    <name>Then I validate the create user search result</name>
+                    <title>Then I validate the create user search result</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>RequestError: connect ECONNREFUSED 127.0.0.1:9515</message>
+                <stack-trace>RequestError: connect ECONNREFUSED 127.0.0.1:9515
+                    at ClientRequest.&lt;anonymous> (D:\KEN\SELFLEARN\AsynWdioProj\node_modules\got\dist\source\core\index.js:956:111)
+                    at Object.onceWrapper (events.js:482:26)
+                    at ClientRequest.emit (events.js:387:35)
+                    at ClientRequest.emit (domain.js:470:12)
+                    at ClientRequest.origin.emit (D:\KEN\SELFLEARN\AsynWdioProj\node_modules\@szmarczak\http-timer\dist\source\index.js:43:20)
+                    at Socket.socketErrorListener (_http_client.js:475:9)
+                    at Socket.emit (events.js:375:28)
+                    at Socket.emit (domain.js:470:12)
+                    at emitErrorNT (internal/streams/destroy.js:106:8)
+                    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+                    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+                    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1148:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,107 @@
+{
+  "uid" : "f1803ae65bb30eb1",
+  "name" : "As a user, I can open the internet website",
+  "fullName" : "The Internet Guinea Pig Website.As a user, I can open the internet website",
+  "historyId" : "c86fa37afa4d6a19cd25be182d3ac392",
+  "time" : {
+    "start" : 1631408172855,
+    "stop" : 1631408176173,
+    "duration" : 3318
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I open the browser and load the url https://the-internet.herokuapp.com",
+      "time" : {
+        "start" : 1631408172858,
+        "stop" : 1631408172864,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Then I should see a header with text Welcome to the-internet",
+      "time" : {
+        "start" : 1631408172864,
+        "stop" : 1631408176172,
+        "duration" : 3308
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "The Internet Guinea Pig Website"
+  }, {
+    "name" : "testClass",
+    "value" : "The Internet Guinea Pig Website"
+  }, {
+    "name" : "testMethod",
+    "value" : "As a user, I can open the internet website"
+  }, {
+    "name" : "package",
+    "value" : "The Internet Guinea Pig Website"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-93.0.4577.63"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "304bee0ebbb99b34",
+      "status" : "broken",
+      "statusDetails" : "RequestError: read ECONNRESET",
+      "time" : {
+        "start" : 1631408053047,
+        "stop" : 1631408056245,
+        "duration" : 3198
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f1803ae65bb30eb1.json",
+  "parameterValues" : [ "chrome-93.0.4577.63" ]
+}

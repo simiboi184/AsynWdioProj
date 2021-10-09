@@ -1,0 +1,158 @@
+{
+  "uid" : "bb5fa0ae35bfed41",
+  "name" : "Validate form data with json file",
+  "fullName" : "Test Practise Form.Validate form data with json file",
+  "historyId" : "7574bfc9c4ff6f6d2965abed91442f53",
+  "time" : {
+    "start" : 1631408196829,
+    "stop" : 1631408204075,
+    "duration" : 7246
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I am on form page \"https://demoqa.com/automation-practice-form\"",
+      "time" : {
+        "start" : 1631408196833,
+        "stop" : 1631408200488,
+        "duration" : 3655
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When I enter all mandate fields from formdata4.json",
+      "time" : {
+        "start" : 1631408200489,
+        "stop" : 1631408204074,
+        "duration" : 3585
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test Practise Form"
+  }, {
+    "name" : "testClass",
+    "value" : "Test Practise Form"
+  }, {
+    "name" : "testMethod",
+    "value" : "Validate form data with json file"
+  }, {
+    "name" : "package",
+    "value" : "Test Practise Form"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-93.0.4577.63"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f5469416d27c4aac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631408189677,
+        "stop" : 1631408196827,
+        "duration" : 7150
+      }
+    }, {
+      "uid" : "85fa56c7b3d027d1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631408182403,
+        "stop" : 1631408189675,
+        "duration" : 7272
+      }
+    }, {
+      "uid" : "2b956865de57ff66",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631408172862,
+        "stop" : 1631408182402,
+        "duration" : 9540
+      }
+    }, {
+      "uid" : "6e0814d088a8c306",
+      "status" : "broken",
+      "statusDetails" : "RequestError: connect ECONNREFUSED 127.0.0.1:9515",
+      "time" : {
+        "start" : 1631408056262,
+        "stop" : 1631408056270,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "1ff26cf69c39d200",
+      "status" : "broken",
+      "statusDetails" : "RequestError: connect ECONNREFUSED 127.0.0.1:9515",
+      "time" : {
+        "start" : 1631408056257,
+        "stop" : 1631408056261,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "5a6df45e8cf1b5b6",
+      "status" : "broken",
+      "statusDetails" : "RequestError: connect ECONNREFUSED 127.0.0.1:9515",
+      "time" : {
+        "start" : 1631408056248,
+        "stop" : 1631408056255,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "e7e03f9dced97faa",
+      "status" : "broken",
+      "statusDetails" : "RequestError: read ECONNRESET",
+      "time" : {
+        "start" : 1631408053035,
+        "stop" : 1631408056244,
+        "duration" : 3209
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bb5fa0ae35bfed41.json",
+  "parameterValues" : [ "chrome-93.0.4577.63" ]
+}

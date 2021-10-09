@@ -1,0 +1,136 @@
+{
+  "fdf19d197dadc49e72bf03002ef8677" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c51165b78b2b7126",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631408243487,
+        "stop" : 1631408251776,
+        "duration" : 8289
+      }
+    } ]
+  },
+  "7574bfc9c4ff6f6d2965abed91442f53" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bb5fa0ae35bfed41",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631408196829,
+        "stop" : 1631408204075,
+        "duration" : 7246
+      }
+    } ]
+  },
+  "3e4d65dd79838ecd457fa7fddb1b7986" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a8bc361fb6ee72cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631408178148,
+        "stop" : 1631408182274,
+        "duration" : 4126
+      }
+    } ]
+  },
+  "a52576d93b460964645385d5e6e6e16d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2a6a6052c965b91b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631408172864,
+        "stop" : 1631408178147,
+        "duration" : 5283
+      }
+    } ]
+  },
+  "f8132cb6248a99176279ef7db6cf70ff" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f1bf666b021434a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631408247531,
+        "stop" : 1631408248588,
+        "duration" : 1057
+      }
+    } ]
+  },
+  "613e9a6c7c527f7f05233395940b5a67" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d47b3b77b00c6ba0",
+      "status" : "broken",
+      "statusDetails" : "TypeError [ERR_INVALID_URL]: Invalid URL: /",
+      "time" : {
+        "start" : 1631408243445,
+        "stop" : 1631408243571,
+        "duration" : 126
+      }
+    } ]
+  },
+  "c86fa37afa4d6a19cd25be182d3ac392" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f1803ae65bb30eb1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631408172855,
+        "stop" : 1631408176173,
+        "duration" : 3318
+      }
+    } ]
+  }
+}

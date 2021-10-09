@@ -1,0 +1,101 @@
+{
+  "uid" : "7c6b3df340ff8011",
+  "name" : "Get App Title",
+  "fullName" : "Test Multiple Environment.Get App Title",
+  "historyId" : "613e9a6c7c527f7f05233395940b5a67",
+  "time" : {
+    "start" : 1631407282097,
+    "stop" : 1631407282230,
+    "duration" : 133
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "TypeError [ERR_INVALID_URL]: Invalid URL: /",
+  "statusTrace" : "TypeError [ERR_INVALID_URL]: Invalid URL: /\n                    at onParseError (internal/url.js:279:9)\n                    at new URL (internal/url.js:355:5)\n                    at Object.validateUrl (D:\\KEN\\SELFLEARN\\AsynWdioProj\\node_modules\\webdriverio\\build\\utils\\index.js:368:27)\n                    at Browser.url (D:\\KEN\\SELFLEARN\\AsynWdioProj\\node_modules\\webdriverio\\build\\commands\\browser\\url.js:47:36)\n                    at Browser.wrapCommandFn (D:\\KEN\\SELFLEARN\\AsynWdioProj\\node_modules\\@wdio\\utils\\build\\shim.js:104:38)\n                    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "TypeError [ERR_INVALID_URL]: Invalid URL: /",
+    "statusTrace" : "TypeError [ERR_INVALID_URL]: Invalid URL: /\n                    at onParseError (internal/url.js:279:9)\n                    at new URL (internal/url.js:355:5)\n                    at Object.validateUrl (D:\\KEN\\SELFLEARN\\AsynWdioProj\\node_modules\\webdriverio\\build\\utils\\index.js:368:27)\n                    at Browser.url (D:\\KEN\\SELFLEARN\\AsynWdioProj\\node_modules\\webdriverio\\build\\commands\\browser\\url.js:47:36)\n                    at Browser.wrapCommandFn (D:\\KEN\\SELFLEARN\\AsynWdioProj\\node_modules\\@wdio\\utils\\build\\shim.js:104:38)\n                    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+    "steps" : [ {
+      "name" : "Given I open app url",
+      "time" : {
+        "start" : 1631407282103,
+        "stop" : 1631407282230,
+        "duration" : 127
+      },
+      "status" : "broken",
+      "statusMessage" : "TypeError [ERR_INVALID_URL]: Invalid URL: /\n                    at onParseError (internal/url.js:279:9)\n                    at new URL (internal/url.js:355:5)\n                    at Object.validateUrl (D:\\KEN\\SELFLEARN\\AsynWdioProj\\node_modules\\webdriverio\\build\\utils\\index.js:368:27)\n                    at Browser.url (D:\\KEN\\SELFLEARN\\AsynWdioProj\\node_modules\\webdriverio\\build\\commands\\browser\\url.js:47:36)\n                    at Browser.wrapCommandFn (D:\\KEN\\SELFLEARN\\AsynWdioProj\\node_modules\\@wdio\\utils\\build\\shim.js:104:38)\n                    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    }, {
+      "name" : "Then I retrieve browser title",
+      "time" : {
+        "start" : 1631407282230,
+        "stop" : 1631407282230,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Test Multiple Environment"
+  }, {
+    "name" : "testClass",
+    "value" : "Test Multiple Environment"
+  }, {
+    "name" : "testMethod",
+    "value" : "Get App Title"
+  }, {
+    "name" : "package",
+    "value" : "Test Multiple Environment"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-93.0.4577.63"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7c6b3df340ff8011.json",
+  "parameterValues" : [ "chrome-93.0.4577.63" ]
+}

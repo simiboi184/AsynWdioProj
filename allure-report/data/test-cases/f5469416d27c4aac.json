@@ -1,0 +1,96 @@
+{
+  "uid" : "f5469416d27c4aac",
+  "name" : "Validate form data with json file",
+  "fullName" : "Test Practise Form.Validate form data with json file",
+  "historyId" : "7574bfc9c4ff6f6d2965abed91442f53",
+  "time" : {
+    "start" : 1631408189677,
+    "stop" : 1631408196827,
+    "duration" : 7150
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I am on form page \"https://demoqa.com/automation-practice-form\"",
+      "time" : {
+        "start" : 1631408189679,
+        "stop" : 1631408193324,
+        "duration" : 3645
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When I enter all mandate fields from formdata3.json",
+      "time" : {
+        "start" : 1631408193324,
+        "stop" : 1631408196826,
+        "duration" : 3502
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test Practise Form"
+  }, {
+    "name" : "testClass",
+    "value" : "Test Practise Form"
+  }, {
+    "name" : "testMethod",
+    "value" : "Validate form data with json file"
+  }, {
+    "name" : "package",
+    "value" : "Test Practise Form"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-93.0.4577.63"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f5469416d27c4aac.json",
+  "parameterValues" : [ "chrome-93.0.4577.63" ]
+}

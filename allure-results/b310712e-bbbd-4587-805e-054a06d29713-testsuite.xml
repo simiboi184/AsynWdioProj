@@ -1,0 +1,179 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1631408053022' stop='1631408056272'>
+    <name>Test Practise Form</name>
+    <title>Test Practise Form</title>
+    <test-cases>
+        <test-case start='1631408053035' status='broken' stop='1631408056244'>
+            <name>Validate form data with json file</name>
+            <title>Validate form data with json file</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-93.0.4577.63'/>
+            </parameters>
+            <steps>
+                <step start='1631408053039' status='broken' stop='1631408056243'>
+                    <name>Given I am on form page "https://demoqa.com/automation-practice-form"</name>
+                    <title>Given I am on form page "https://demoqa.com/automation-practice-form"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1631408056244' status='canceled' stop='1631408056245'>
+                    <name>When I enter all mandate fields</name>
+                    <title>When I enter all mandate fields</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>RequestError: read ECONNRESET</message>
+                <stack-trace>RequestError: read ECONNRESET
+                    at ClientRequest.&lt;anonymous> (D:\KEN\SELFLEARN\AsynWdioProj\node_modules\got\dist\source\core\index.js:956:111)
+                    at Object.onceWrapper (events.js:482:26)
+                    at ClientRequest.emit (events.js:387:35)
+                    at ClientRequest.emit (domain.js:470:12)
+                    at ClientRequest.origin.emit (D:\KEN\SELFLEARN\AsynWdioProj\node_modules\@szmarczak\http-timer\dist\source\index.js:43:20)
+                    at Socket.socketErrorListener (_http_client.js:475:9)
+                    at Socket.emit (events.js:375:28)
+                    at Socket.emit (domain.js:470:12)
+                    at emitErrorNT (internal/streams/destroy.js:106:8)
+                    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+                    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+                    at TCP.onStreamRead (internal/stream_base_commons.js:209:20)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1631408056248' status='broken' stop='1631408056255'>
+            <name>Validate form data with json file</name>
+            <title>Validate form data with json file</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-93.0.4577.63'/>
+            </parameters>
+            <steps>
+                <step start='1631408056250' status='broken' stop='1631408056255'>
+                    <name>Given I am on form page "https://demoqa.com/automation-practice-form"</name>
+                    <title>Given I am on form page "https://demoqa.com/automation-practice-form"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1631408056255' status='canceled' stop='1631408056255'>
+                    <name>When I enter all mandate fields from formdata2.json</name>
+                    <title>When I enter all mandate fields from formdata2.json</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>RequestError: connect ECONNREFUSED 127.0.0.1:9515</message>
+                <stack-trace>RequestError: connect ECONNREFUSED 127.0.0.1:9515
+                    at ClientRequest.&lt;anonymous> (D:\KEN\SELFLEARN\AsynWdioProj\node_modules\got\dist\source\core\index.js:956:111)
+                    at Object.onceWrapper (events.js:482:26)
+                    at ClientRequest.emit (events.js:387:35)
+                    at ClientRequest.emit (domain.js:470:12)
+                    at ClientRequest.origin.emit (D:\KEN\SELFLEARN\AsynWdioProj\node_modules\@szmarczak\http-timer\dist\source\index.js:43:20)
+                    at Socket.socketErrorListener (_http_client.js:475:9)
+                    at Socket.emit (events.js:375:28)
+                    at Socket.emit (domain.js:470:12)
+                    at emitErrorNT (internal/streams/destroy.js:106:8)
+                    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+                    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+                    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1148:16)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1631408056257' status='broken' stop='1631408056261'>
+            <name>Validate form data with json file</name>
+            <title>Validate form data with json file</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-93.0.4577.63'/>
+            </parameters>
+            <steps>
+                <step start='1631408056257' status='broken' stop='1631408056261'>
+                    <name>Given I am on form page "https://demoqa.com/automation-practice-form"</name>
+                    <title>Given I am on form page "https://demoqa.com/automation-practice-form"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1631408056261' status='canceled' stop='1631408056261'>
+                    <name>When I enter all mandate fields from formdata3.json</name>
+                    <title>When I enter all mandate fields from formdata3.json</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>RequestError: connect ECONNREFUSED 127.0.0.1:9515</message>
+                <stack-trace>RequestError: connect ECONNREFUSED 127.0.0.1:9515
+                    at ClientRequest.&lt;anonymous> (D:\KEN\SELFLEARN\AsynWdioProj\node_modules\got\dist\source\core\index.js:956:111)
+                    at Object.onceWrapper (events.js:482:26)
+                    at ClientRequest.emit (events.js:387:35)
+                    at ClientRequest.emit (domain.js:470:12)
+                    at ClientRequest.origin.emit (D:\KEN\SELFLEARN\AsynWdioProj\node_modules\@szmarczak\http-timer\dist\source\index.js:43:20)
+                    at Socket.socketErrorListener (_http_client.js:475:9)
+                    at Socket.emit (events.js:375:28)
+                    at Socket.emit (domain.js:470:12)
+                    at emitErrorNT (internal/streams/destroy.js:106:8)
+                    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+                    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+                    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1148:16)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1631408056262' status='broken' stop='1631408056270'>
+            <name>Validate form data with json file</name>
+            <title>Validate form data with json file</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-93.0.4577.63'/>
+            </parameters>
+            <steps>
+                <step start='1631408056263' status='broken' stop='1631408056270'>
+                    <name>Given I am on form page "https://demoqa.com/automation-practice-form"</name>
+                    <title>Given I am on form page "https://demoqa.com/automation-practice-form"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1631408056270' status='canceled' stop='1631408056270'>
+                    <name>When I enter all mandate fields from formdata4.json</name>
+                    <title>When I enter all mandate fields from formdata4.json</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>RequestError: connect ECONNREFUSED 127.0.0.1:9515</message>
+                <stack-trace>RequestError: connect ECONNREFUSED 127.0.0.1:9515
+                    at ClientRequest.&lt;anonymous> (D:\KEN\SELFLEARN\AsynWdioProj\node_modules\got\dist\source\core\index.js:956:111)
+                    at Object.onceWrapper (events.js:482:26)
+                    at ClientRequest.emit (events.js:387:35)
+                    at ClientRequest.emit (domain.js:470:12)
+                    at ClientRequest.origin.emit (D:\KEN\SELFLEARN\AsynWdioProj\node_modules\@szmarczak\http-timer\dist\source\index.js:43:20)
+                    at Socket.socketErrorListener (_http_client.js:475:9)
+                    at Socket.emit (events.js:375:28)
+                    at Socket.emit (domain.js:470:12)
+                    at emitErrorNT (internal/streams/destroy.js:106:8)
+                    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+                    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+                    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1148:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

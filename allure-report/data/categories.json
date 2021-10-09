@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError [ERR_INVALID_URL]: Invalid URL: /",
+      "children" : [ {
+        "name" : "Get App Title",
+        "uid" : "d47b3b77b00c6ba0",
+        "parentUid" : "80adbdf8efb327a0d12211e399b0c41b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1631408243445,
+          "stop" : 1631408243571,
+          "duration" : 126
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-93.0.4577.63" ]
+      } ],
+      "uid" : "80adbdf8efb327a0d12211e399b0c41b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

@@ -1,5 +1,5 @@
 @MRegression
-Feature: Validate file download
+Feature: Validate File download
 
     Scenario Outline: Test File download
         Given I open the browser and load the url <pageURL>

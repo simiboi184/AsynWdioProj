@@ -8,7 +8,7 @@ let appBaseUrl:string;
 //process.env.XXX ===> ENV can be anythings..
 //Terminal (Powershell): SET XXX = ... ==> This will not works!
 //Terminal (Command Prompt): SET XXX = .....
-console.log("process.env.ENVI >>>>>>> ", process.env.ENVI);
+//console.log("process.env.ENVI >>>>>>> ", process.env.ENVI);
 
 if (process.env.ENVI == 'DEV'){
     appBaseUrl = Google;
@@ -70,6 +70,9 @@ export const config: WebdriverIO.Config = {
             './test/features/**/E2E_user.feature',
             './test/features/**/form.feature',
             './test/features/**/home.feature',
+        ],
+        loginonly:[
+            './test/features/**/login.feature'
         ]
     },
     //
@@ -194,7 +197,7 @@ export const config: WebdriverIO.Config = {
             {
                 outputDir: 'allure-results',
                 disableWebdriverStepsReporting: true,
-                disableWebdriverScreenshotsReporting: true,
+                disableWebdriverScreenshotsReporting: false,
                 useCucumberStepReporter: true
             }
         ]
@@ -319,8 +322,13 @@ export const config: WebdriverIO.Config = {
      * @param {string}             result.error    error stack if scenario failed
      * @param {number}             result.duration duration of scenario in milliseconds
      */
-    // afterStep: function (step, scenario, result) {
-    // },
+    afterStep: async function (step, scenario, result) {
+        //if failed, take a screenshot
+        if (!result.passed)
+        {
+            await browser.takeScreenshot();
+        }
+    },
     /**
      *
      * Runs before a Cucumber Scenario.

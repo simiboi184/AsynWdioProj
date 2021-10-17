@@ -1,10 +1,14 @@
 import { Given, When, Then } from "@cucumber/cucumber"
 import registerTeaPage from 'src/pages/registertea.page'
+import report from '@wdio/allure-reporter'
 
 Given(/^I am on practice page \"([^\"]*)\"$/, async (url:string) => {
-    browser.url(url);
-    browser.maximizeWindow();
-    browser.pause(3500); 
+    await browser.url(url);
+    report.addStep('Registertea: opening url...');
+    await browser.maximizeWindow();
+    report.addStep('Registertea: maximize window...')
+    await browser.pause(3500); 
+    report.addStep('Registertea: pausing window...')
 });
 
 When(/^I enter firstname (.+) and lastname (.+)$/, async (fname:string, lname:string) => {

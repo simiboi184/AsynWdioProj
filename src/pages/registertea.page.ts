@@ -71,7 +71,7 @@ class RegisterTeaPage extends Page {
     }
 
     public async validatePageForms(pageHeader: string) {
-        await expect(this.headerText.getText()).toEqual(pageHeader);
+        await expect(await this.headerText.getText()).toEqual(pageHeader);
     }
 }
 export default new RegisterTeaPage();

@@ -1,5 +1,7 @@
 import path from 'path';
+import { deleteDirectory } from 'src/utils/fileutils';
 import { DOWNLOAD_FOLDER_PATH } from './src/constants/pathconsts';
+import report from '@wdio/allure-reporter'
 
 const Google="https://www.google.com/";
 const Wiki="https://en.wikipedia.org/wiki/Main_Page";
@@ -15,6 +17,7 @@ if (process.env.ENVI == 'DEV'){
 }else if(process.env.ENVI == 'QA'){
     appBaseUrl = Wiki;
 }else{
+    appBaseUrl = Google;
 //    console.log("Please enter the correct ENV environment!!!! DEV or QA");
 //    process.exit(); //stop any further execution!!
 }
@@ -250,8 +253,9 @@ export const config: WebdriverIO.Config = {
      * @param {Object} config wdio configuration object
      * @param {Array.<Object>} capabilities list of capabilities details
      */
-    // onPrepare: function (config, capabilities) {
-    // },
+    onPrepare: function (config, capabilities) {
+        deleteDirectory('allure-results');
+    },
     /**
      * Gets executed before a worker process is spawned and can be used to initialise specific service
      * for that worker as well as modify runtime environments in an async fashion.
@@ -346,9 +350,11 @@ export const config: WebdriverIO.Config = {
      * @param {String}                   uri      path to feature file
      * @param {GherkinDocument.IFeature} feature  Cucumber feature object
      */
-    // afterFeature: function (uri, feature) {
-    // },
-    
+    afterFeature: function (uri, feature) {
+        report.addEnvironment("BROWSER", "CHROME");
+        report.addEnvironment("ENV URL", appBaseUrl);
+        report.addEnvironment("OS Platform", process.platform); //tell you different options
+    },
     /**
      * Runs after a WebdriverIO command gets executed
      * @param {String} commandName hook command name

@@ -1,14 +1,15 @@
 import { Given, When, Then } from "@cucumber/cucumber"
 import registerTeaPage from 'src/pages/registertea.page'
 import report from '@wdio/allure-reporter'
+import { addLog } from "src/utils/commands";
 
 Given(/^I am on practice page \"([^\"]*)\"$/, async (url:string) => {
     await browser.url(url);
-    report.addStep('Registertea: opening url...');
+    addLog('Registertea: opening url...');
     await browser.maximizeWindow();
-    report.addStep('Registertea: maximize window...')
+    addLog('Registertea: maximize window...')
     await browser.pause(3500); 
-    report.addStep('Registertea: pausing window...')
+    addLog('Registertea: pausing window...')
 });
 
 When(/^I enter firstname (.+) and lastname (.+)$/, async (fname:string, lname:string) => {

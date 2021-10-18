@@ -5,11 +5,8 @@ import { addLog } from "src/utils/commands";
 
 Given(/^I am on practice page \"([^\"]*)\"$/, async (url:string) => {
     await browser.url(url);
-    addLog('Registertea: opening url...');
     await browser.maximizeWindow();
-    addLog('Registertea: maximize window...')
     await browser.pause(3500); 
-    addLog('Registertea: pausing window...')
 });
 
 When(/^I enter firstname (.+) and lastname (.+)$/, async (fname:string, lname:string) => {

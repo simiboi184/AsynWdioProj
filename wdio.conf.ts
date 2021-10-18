@@ -1,5 +1,5 @@
 import path from 'path';
-import { deleteDirectory } from 'src/utils/fileutils';
+import { deleteDirectory } from './src/utils/fileutils';
 import { DOWNLOAD_FOLDER_PATH } from './src/constants/pathconsts';
 import report from '@wdio/allure-reporter'
 
@@ -354,6 +354,8 @@ export const config: WebdriverIO.Config = {
         report.addEnvironment("BROWSER", "CHROME");
         report.addEnvironment("ENV URL", appBaseUrl);
         report.addEnvironment("OS Platform", process.platform); //tell you different options
+        report.addEnvironment("OS Memory-Name", process.memoryUsage.name);
+        report.addEnvironment("OS Memory-length", process.memoryUsage.length.toString());        
     },
     /**
      * Runs after a WebdriverIO command gets executed

@@ -2,6 +2,7 @@ import { Then } from "@cucumber/cucumber";
 import fs from 'fs';
 import path from 'path';
 import { DOWNLOAD_FOLDER_PATH } from "src/constants/pathconsts";
+import assertions from "src/utils/assertions";
 import { deleteDirectory } from "src/utils/fileutils";
 /*
 Notice that you did not repeat the first statement, because you already created it before already.
@@ -26,7 +27,8 @@ Then (/^I validate downloaded file extension$/, async() => {
     
     //path.extname(files[0]);//return you the first list of the files, the FIRST one.
     files.forEach(file => {
-        expect(extensions).toContain(path.extname(file));
+        //expect(extensions).toContain(path.extname(file));
+        assertions.toContain(extensions, path.extname(file));
     });
     deleteDirectory(DOWNLOAD_FOLDER_PATH);
 

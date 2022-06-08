@@ -3,94 +3,16 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "As a user, I can open the internet website",
-    "uid" : "f1803ae65bb30eb1",
+    "uid" : "18e454525678ebfa",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1631408172855,
-      "stop" : 1631408176173,
-      "duration" : 3318
+      "start" : 1634523614705,
+      "stop" : 1634523618159,
+      "duration" : 3454
     },
     "flaky" : false,
     "newFailed" : false,
-    "parameters" : [ "chrome-93.0.4577.63" ]
-  }, {
-    "name" : "Validate End to End Get Single User",
-    "uid" : "2a6a6052c965b91b",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1631408172864,
-      "stop" : 1631408178147,
-      "duration" : 5283
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-93.0.4577.63" ]
-  }, {
-    "name" : "Validate End to End POST Create User",
-    "uid" : "a8bc361fb6ee72cb",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1631408178148,
-      "stop" : 1631408182274,
-      "duration" : 4126
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-93.0.4577.63" ]
-  }, {
-    "name" : "Validate form data with json file",
-    "uid" : "bb5fa0ae35bfed41",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1631408196829,
-      "stop" : 1631408204075,
-      "duration" : 7246
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-93.0.4577.63" ]
-  }, {
-    "name" : "Get App Title",
-    "uid" : "d47b3b77b00c6ba0",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "broken",
-    "time" : {
-      "start" : 1631408243445,
-      "stop" : 1631408243571,
-      "duration" : 126
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-93.0.4577.63" ]
-  }, {
-    "name" : "Test Different wait types",
-    "uid" : "c51165b78b2b7126",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1631408243487,
-      "stop" : 1631408251776,
-      "duration" : 8289
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-93.0.4577.63" ]
-  }, {
-    "name" : "As a user, I can log into the secure area",
-    "uid" : "f1bf666b021434a3",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1631408247531,
-      "stop" : 1631408248588,
-      "duration" : 1057
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-93.0.4577.63" ]
+    "parameters" : [ "chrome-94.0.4606.81" ]
   } ]
 }

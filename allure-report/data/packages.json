@@ -5,112 +5,18 @@
     "name" : "The Internet Guinea Pig Website",
     "children" : [ {
       "name" : "As a user, I can open the internet website",
-      "uid" : "f1803ae65bb30eb1",
+      "uid" : "18e454525678ebfa",
       "parentUid" : "6c7c808c32eafa1b6995487416554807",
       "status" : "passed",
       "time" : {
-        "start" : 1631408172855,
-        "stop" : 1631408176173,
-        "duration" : 3318
+        "start" : 1634523614705,
+        "stop" : 1634523618159,
+        "duration" : 3454
       },
       "flaky" : false,
       "newFailed" : false,
-      "parameters" : [ "chrome-93.0.4577.63" ]
-    }, {
-      "name" : "As a user, I can log into the secure area",
-      "uid" : "f1bf666b021434a3",
-      "parentUid" : "6c7c808c32eafa1b6995487416554807",
-      "status" : "passed",
-      "time" : {
-        "start" : 1631408247531,
-        "stop" : 1631408248588,
-        "duration" : 1057
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "chrome-93.0.4577.63" ]
+      "parameters" : [ "chrome-94.0.4606.81" ]
     } ],
     "uid" : "6c7c808c32eafa1b6995487416554807"
-  }, {
-    "name" : "Test End to End User",
-    "children" : [ {
-      "name" : "Validate End to End Get Single User",
-      "uid" : "2a6a6052c965b91b",
-      "parentUid" : "5275e013042b3ecbfc907d3d4cf0435f",
-      "status" : "passed",
-      "time" : {
-        "start" : 1631408172864,
-        "stop" : 1631408178147,
-        "duration" : 5283
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "chrome-93.0.4577.63" ]
-    }, {
-      "name" : "Validate End to End POST Create User",
-      "uid" : "a8bc361fb6ee72cb",
-      "parentUid" : "5275e013042b3ecbfc907d3d4cf0435f",
-      "status" : "passed",
-      "time" : {
-        "start" : 1631408178148,
-        "stop" : 1631408182274,
-        "duration" : 4126
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "chrome-93.0.4577.63" ]
-    } ],
-    "uid" : "5275e013042b3ecbfc907d3d4cf0435f"
-  }, {
-    "name" : "Test Practise Form",
-    "children" : [ {
-      "name" : "Validate form data with json file",
-      "uid" : "bb5fa0ae35bfed41",
-      "parentUid" : "0545a62852e59eec14afee8008baba1b",
-      "status" : "passed",
-      "time" : {
-        "start" : 1631408196829,
-        "stop" : 1631408204075,
-        "duration" : 7246
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "chrome-93.0.4577.63" ]
-    } ],
-    "uid" : "0545a62852e59eec14afee8008baba1b"
-  }, {
-    "name" : "Test Multiple Environment",
-    "children" : [ {
-      "name" : "Get App Title",
-      "uid" : "d47b3b77b00c6ba0",
-      "parentUid" : "d66e1e6f438677703ae509bf16301fef",
-      "status" : "broken",
-      "time" : {
-        "start" : 1631408243445,
-        "stop" : 1631408243571,
-        "duration" : 126
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "chrome-93.0.4577.63" ]
-    } ],
-    "uid" : "d66e1e6f438677703ae509bf16301fef"
-  }, {
-    "name" : "The herokuapp | Dynamic Load - 1",
-    "children" : [ {
-      "name" : "Test Different wait types",
-      "uid" : "c51165b78b2b7126",
-      "parentUid" : "b05114dd48ae0f1a05f7800b059d1a9a",
-      "status" : "passed",
-      "time" : {
-        "start" : 1631408243487,
-        "stop" : 1631408251776,
-        "duration" : 8289
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "chrome-93.0.4577.63" ]
-    } ],
-    "uid" : "b05114dd48ae0f1a05f7800b059d1a9a"
   } ]
 }

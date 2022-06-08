@@ -1,12 +1,12 @@
 {
-  "uid" : "f1803ae65bb30eb1",
+  "uid" : "18e454525678ebfa",
   "name" : "As a user, I can open the internet website",
   "fullName" : "The Internet Guinea Pig Website.As a user, I can open the internet website",
-  "historyId" : "c86fa37afa4d6a19cd25be182d3ac392",
+  "historyId" : "3ac50f3dd05952e6f78c3bd6e03f9e40",
   "time" : {
-    "start" : 1631408172855,
-    "stop" : 1631408176173,
-    "duration" : 3318
+    "start" : 1634523614705,
+    "stop" : 1634523618159,
+    "duration" : 3454
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -19,9 +19,9 @@
     "steps" : [ {
       "name" : "Given I open the browser and load the url https://the-internet.herokuapp.com",
       "time" : {
-        "start" : 1631408172858,
-        "stop" : 1631408172864,
-        "duration" : 6
+        "start" : 1634523614707,
+        "stop" : 1634523614714,
+        "duration" : 7
       },
       "status" : "passed",
       "steps" : [ ],
@@ -29,30 +29,45 @@
       "parameters" : [ ],
       "hasContent" : false,
       "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
       "name" : "Then I should see a header with text Welcome to the-internet",
       "time" : {
-        "start" : 1631408172864,
-        "stop" : 1631408176172,
-        "duration" : 3308
+        "start" : 1634523614714,
+        "stop" : 1634523618158,
+        "duration" : 3444
       },
       "status" : "passed",
-      "steps" : [ ],
+      "steps" : [ {
+        "name" : "STEP: Assertion >> .heading to Have Text Welcome to the-internet",
+        "time" : {
+          "start" : 1634523618157,
+          "stop" : 1634523618157,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
     "hasContent" : true,
-    "stepsCount" : 2,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "stepsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -63,7 +78,7 @@
     "value" : "javascript"
   }, {
     "name" : "thread",
-    "value" : "0-2"
+    "value" : "0-0"
   }, {
     "name" : "suite",
     "value" : "The Internet Guinea Pig Website"
@@ -82,26 +97,17 @@
   } ],
   "parameters" : [ {
     "name" : "browser",
-    "value" : "chrome-93.0.4577.63"
+    "value" : "chrome-94.0.4606.81"
   } ],
   "links" : [ ],
   "hidden" : false,
   "retry" : false,
   "extra" : {
     "severity" : "normal",
-    "retries" : [ {
-      "uid" : "304bee0ebbb99b34",
-      "status" : "broken",
-      "statusDetails" : "RequestError: read ECONNRESET",
-      "time" : {
-        "start" : 1631408053047,
-        "stop" : 1631408056245,
-        "duration" : 3198
-      }
-    } ],
+    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f1803ae65bb30eb1.json",
-  "parameterValues" : [ "chrome-93.0.4577.63" ]
+  "source" : "18e454525678ebfa.json",
+  "parameterValues" : [ "chrome-94.0.4606.81" ]
 }

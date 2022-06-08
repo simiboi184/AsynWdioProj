@@ -1,1 +1,16 @@
-[ ]
+[ {
+  "values" : [ "CHROME" ],
+  "name" : "BROWSER"
+}, {
+  "values" : [ "https://www.google.com/" ],
+  "name" : "ENV URL"
+}, {
+  "values" : [ "win32" ],
+  "name" : "OS Platform"
+}, {
+  "values" : [ "memoryUsage" ],
+  "name" : "OS Memory-Name"
+}, {
+  "values" : [ "0" ],
+  "name" : "OS Memory-length"
+} ]
